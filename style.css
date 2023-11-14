@@ -76,6 +76,11 @@ li {
     border-radius: 50%;
     border: 1px solid var(--secondary-text);
     box-shadow: 4px 2px 23px 3px rgba(81,76,63,0.29);
+    transition: 0.4s ease-in-out;
+}
+
+.cv__photo:hover {
+    border: 1px solid white;
 }
 
 .cv__name {
@@ -110,8 +115,8 @@ li {
 .cv__socials-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .cv__socials-list a {
@@ -246,10 +251,14 @@ footer a:hover {
 
 /*MOBILE SCREENS*/
 @media(max-width: 600px) {
+    .cv__container {
+        margin: 10px;
+        padding: 10px;
+    }
 
     .cv__photo {
-        width: 185px;
-        height: 185px;
+        width: 150px;
+        height: 150px;
     }
 
     .cv__name {
@@ -258,6 +267,10 @@ footer a:hover {
 
     .cv__bio {
         font-size: 12px;
+    }
+
+    .cv__email {
+        font-size: 14px;
     }
 
 }
